@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "HR_PAYROLL_SYSTEM/1.0.0": {
+        "runtime": {
+          "HR_PAYROLL_SYSTEM.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "HR_PAYROLL_SYSTEM/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

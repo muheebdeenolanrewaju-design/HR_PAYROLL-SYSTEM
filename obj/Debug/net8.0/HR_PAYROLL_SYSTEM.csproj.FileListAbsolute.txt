@@ -1,0 +1,14 @@
+C:\Users\HP\RiderProjects\HR_PAYROLL_SYSTEM\bin\Debug\net8.0\HR_PAYROLL_SYSTEM.exe
+C:\Users\HP\RiderProjects\HR_PAYROLL_SYSTEM\bin\Debug\net8.0\HR_PAYROLL_SYSTEM.deps.json
+C:\Users\HP\RiderProjects\HR_PAYROLL_SYSTEM\bin\Debug\net8.0\HR_PAYROLL_SYSTEM.runtimeconfig.json
+C:\Users\HP\RiderProjects\HR_PAYROLL_SYSTEM\bin\Debug\net8.0\HR_PAYROLL_SYSTEM.dll
+C:\Users\HP\RiderProjects\HR_PAYROLL_SYSTEM\bin\Debug\net8.0\HR_PAYROLL_SYSTEM.pdb
+C:\Users\HP\RiderProjects\HR_PAYROLL_SYSTEM\obj\Debug\net8.0\HR_PAYROLL_SYSTEM.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\RiderProjects\HR_PAYROLL_SYSTEM\obj\Debug\net8.0\HR_PAYROLL_SYSTEM.AssemblyInfoInputs.cache
+C:\Users\HP\RiderProjects\HR_PAYROLL_SYSTEM\obj\Debug\net8.0\HR_PAYROLL_SYSTEM.AssemblyInfo.cs
+C:\Users\HP\RiderProjects\HR_PAYROLL_SYSTEM\obj\Debug\net8.0\HR_PAYROLL_SYSTEM.csproj.CoreCompileInputs.cache
+C:\Users\HP\RiderProjects\HR_PAYROLL_SYSTEM\obj\Debug\net8.0\HR_PAYROLL_SYSTEM.dll
+C:\Users\HP\RiderProjects\HR_PAYROLL_SYSTEM\obj\Debug\net8.0\refint\HR_PAYROLL_SYSTEM.dll
+C:\Users\HP\RiderProjects\HR_PAYROLL_SYSTEM\obj\Debug\net8.0\HR_PAYROLL_SYSTEM.pdb
+C:\Users\HP\RiderProjects\HR_PAYROLL_SYSTEM\obj\Debug\net8.0\HR_PAYROLL_SYSTEM.genruntimeconfig.cache
+C:\Users\HP\RiderProjects\HR_PAYROLL_SYSTEM\obj\Debug\net8.0\ref\HR_PAYROLL_SYSTEM.dll
