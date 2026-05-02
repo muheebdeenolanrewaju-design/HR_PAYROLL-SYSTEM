@@ -1,5 +1,6 @@
 using HR_PAYROLL_SYSTEM.Services;
 using HR_PAYROLL_SYSTEM.Admin;
+using HR_PAYROLL_SYSTEM.Models;
 
 namespace HR_PAYROLL_SYSTEM.UI;
 
@@ -70,8 +71,61 @@ public class ConsoleApp
                     foreach (var e in employees)
                         Console.WriteLine($"{e.Id} | {e.Name} | {e.Department}");
                     break;
+                case "2":
+                {
+                    Console.Write("Enter Name: ");
+                    var name = Console.ReadLine();
 
+                    Console.Write("Enter Department: ");
+                    var dept = Console.ReadLine();
+
+                    Console.WriteLine("Select Type: 1. Full-Time  2. Contract");
+                    var type = Console.ReadLine();
+
+                    Employee newEmployee;
+
+                    if (type == "1")
+                    {
+                        Console.Write("Base Salary: ");
+                        decimal salary = decimal.Parse(Console.ReadLine());
+
+                        Console.Write("Bonus: ");
+                        decimal bonus = decimal.Parse(Console.ReadLine());
+
+                        newEmployee = new FullTimeEmployee
+                        {
+                            Id = Employee.GetRandomString("FUL"),
+                            Name = name,
+                            Department = dept,
+                            BaseSalary = salary,
+                            BonusProperty = bonus
+                        };
+                    }
+                    else
+                    {
+                        Console.Write("Hourly Rate: ");
+                        decimal rate = decimal.Parse(Console.ReadLine());
+
+                        Console.Write("Hours Worked: ");
+                        decimal hours = decimal.Parse(Console.ReadLine());
+
+                        newEmployee = new ContractEmployee
+                        {
+                            Id = Employee.GetRandomString("CON"),
+                            Name = name,
+                            Department = dept,
+                            HourlyRate = rate,
+                            HoursWorked = hours
+                        };
+                    }
+
+                    bool added = employeeService.AddEmployee(newEmployee);
+                    Console.WriteLine(added ? "Added successfully" : "Failed to add");
+                }
+                    break;
                 case "3":
+                {
+
                     Console.Write("Enter Employee ID: ");
                     string id = Console.ReadLine();
 
@@ -83,6 +137,8 @@ public class ConsoleApp
 
                     bool updated = employeeService.UpdateSalary(id, salary, bonus);
                     Console.WriteLine(updated ? "Updated successfully" : "Failed");
+                }
+
                     break;
 
                 case "4":
@@ -190,7 +246,10 @@ public class ConsoleApp
 
                 case "2":
                     var top = adminService.GetHighestPaid();
-                    Console.WriteLine($"{top.EmployeeName} - {top.AmountPaid}");
+                    if (top == null)
+                        Console.WriteLine("No payroll data yet");
+                    else
+                        Console.WriteLine($"{top.EmployeeName} - {top.AmountPaid}");
                     break;
 
                 case "3":
@@ -204,8 +263,20 @@ public class ConsoleApp
                     break;
 
                 case "5":
+                {
                     var dept = adminService.GetDepartmentAnalytics();
-                    Console.WriteLine(dept);
+
+                    foreach (var d in dept)
+                    {
+                        dynamic item = d;
+
+                        Console.WriteLine(
+                            $"Department: {item.Department} | " +
+                            $"Employees: {item.EmployeeCount} | " +
+                            $"Total Salary: {item.TotalSalary}"
+                        );
+                    }
+                }
                     break;
 
                 case "6":
@@ -215,9 +286,11 @@ public class ConsoleApp
                     break;
 
                 case "7":
+                {
                     Console.Write("Enter Department: ");
                     string d = Console.ReadLine();
                     Console.WriteLine(adminService.DepartmentExists(d));
+                }
                     break;
 
                 case "8":

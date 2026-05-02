@@ -77,7 +77,7 @@ public class AdminService
     // -------------------------------
     // DEPARTMENT GROUPING
     // -------------------------------
-    public object GetDepartmentAnalytics()
+    public IEnumerable<object> GetDepartmentAnalytics()
     {
         return _employees
             .GroupBy(e => e.Department)

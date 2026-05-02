@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HR_PAYROLL_SYSTEM")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+33f33fdb581a96b3d93d6b5ae8fcd3bfad499013")]
 [assembly: System.Reflection.AssemblyProductAttribute("HR_PAYROLL_SYSTEM")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HR_PAYROLL_SYSTEM")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
